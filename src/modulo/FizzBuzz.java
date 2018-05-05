@@ -11,7 +11,7 @@ package modulo;
 * you count from 1 to 20. Easy, right? Here's the catch: instead of saying
 * numbers divisible by 3, say "Fizz". And instead of saying numbers divisible
 * by 5, say "Buzz". For numbers divisible by both 3 and 5, say "FizzBuzz".
-* 
+*
 * So the rules are:
 * 		Any number divisible by 3 is replaced by the word fizz 
 * 		Any number divisible by 5 is replaced by the word buzz. 
@@ -27,5 +27,27 @@ package modulo;
 
 public class FizzBuzz {
 
+	public static void main(String[] args) {
+	
+		for (int y = 1; y < 21; y++) {
+	
+			if(y%3 == 0  &&  y%5 == 0) {
+				System.out.println("fizzbuzz");
+			}
+			
+			else if(y%3 == 0) {
+		System.out.println("fizz");
+	}
+			else if(y%5 == 0) {
+				System.out.println("buzz");
+			}
+			else {
+				System.out.println(y);
+			}
+	
+		}
+	
+	
+	}
 }
 
